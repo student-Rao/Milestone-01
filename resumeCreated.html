@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Resume</title>
+    <link rel="stylesheet" href="resumeCreates.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <div class="createresumepage">
+        
+        <div class="resumemaincont">
+          <div class="resumetextsec">
+             <h1>Name:</h1>
+             <label  id='name'>
+              <input type="text" placeholder='' class="textarea"/>
+             </label>
+             <h1>Email :</h1>
+             <label  id='email'>
+              <input type="email" placeholder='' class="textarea"/>
+             </label>
+             <label id="imagelabel">
+                <h1>Image</h1>
+                <input type="file" placeholder="Upload Image" id="profileimage">
+             </label>
+             <h2 onclick="skillsec()" draggable="true"  >Skills :</h2>
+             <div class="skillsection" >
+             
+           
+              <textarea name=""  id="skill" placeholder='Skills'></textarea>
+              </div>
+              <h2>Education :</h2>
+           
+           <textarea name="" id="skill" placeholder='Education'></textarea>
+           <h2>Experience :</h2>
+           
+           <textarea name="" id="skill" placeholder='Experience'></textarea>
+          
+                <div class="btn">
+           <button>Create Resume</button>
+        </div>
+          
+          </div>
+         
+        
+      </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script>
+        function skillsec(){
+            const show=document.getElementsByClassName(".skillsection")
+            if(show.display="block"){
+                show.display="block"
+            }else{
+                show.display="none"
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    });
+    </script>
+</body>
+</html>
