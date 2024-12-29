@@ -1,119 +1,136 @@
-.createresumepage{
-    height: 1200px;
-    width: 100%;
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.resume-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-   
-    /* background-color: beige; */
-
-
-}
-
-
-.resumemaincont{
-    height: 1100px;
-    width: 60%;
-    margin-top: 100px;
-    margin-bottom: 80px;
-    display: flex;
-    border: 1px solid rgb(239,241,243);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.resumetextsec{
-    height: 1000px;
-    width: 60%;
-    padding-left: 100px;
-    padding-top: 50px;
-    /* border: 1px solid yellow; */
-}
-
-.resumetextsec h1{
-    font-size: 20px;
-    margin-top: 10px;
-    font-weight: 500;
-}
-h2{
-    margin-top: 20px;
-    padding-bottom: 20px;
-}
-
-.textarea{
-    height: 40px;
-    width: 40%;
-    border: none;
-    border-bottom: 1px solid black;
-}
-
-#skill{
-    height: 150px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: white;
     width: 80%;
-    /* color: whitesmoke; */
-    font-size: 20px;
-    padding-left: 7px;
-    background-color:white;
-    border: 1px solid black;
+    height: 800px;
+    border-radius:10px; 
+    margin: 30px   auto;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    border-radius: 10px;
-
+    /* margin: 10px 10px ; */
 }
 
-.resumetextsec button{
-    height: 60px;
-    width:200px;
-    margin-top:10vh;
-    margin-left:3vw;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    border: 1px solid orangered;
-}
-
-.btn{
+.part1{
+    height: 100%;
+    width: 40%;
+    background-color: rgb(219,211,216);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
-.resumetextsec button:hover{
-    transform: scale(1.02);
-    transition-duration: 1ms;
+#profilepic{
+    height: 250px;
+    border-radius: 45%;
+    display: flex;
+    align-self: center;
+    border: 3px solid orangered;
 }
-button a{
-    text-decoration: none;
+
+.part1 h2{
+    font-size: 30px;
+    font-weight: 700;
+    /* border: 5px solid orange; */
+    /* border-radius: 40%; */
+    text-decoration: underline;
+    padding: 10px 20px;
+    color: rgb(73, 72, 72);
+}
+.part1 p{
+    text-align: center;
+    font-size: 20px;
     color: black;
 }
-
-.resumepicsec{
-height: 800px;
-width: 40%;
-display: flex;
-/* justify-content: center; */
-flex-direction: column;
-gap: 20px;
-border: 1px solid blue;
+#para2{
+    margin-top: 10px;
+    text-align: left;
 }
-.resumepicsec p{
+
+
+
+
+
+
+.part2{
+    height: 100%;
+    width: 60%;
+    /* background-color: rgb(216,180,160); */
+}
+
+.part2 h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.part2 h3{
+    font-size: 30px;
+    /* margin: 5px 5px; */
+    border: 2px solid orangered;
+    box-shadow: orangered 0px 5px 15px;
+    padding: 5px;
+    border-radius: 10px;
     margin-left: 50px;
-    position: relative;
-    bottom: 40px;
+    margin-right: 50px;
 }
-.resumemainpic{
-    height: 150px;
-    width: 65%;
-    margin: 30px 50px;
-    border-radius: 40%;
-    border: 1px solid black;
+
+.personalinfo {
+    height: 170px;
+    width: 60%;
+    margin: 20px 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-/* .skillsection{
-    display: none;
-} */
-.resumemainlinks{
-    height: 200px;
-    width: 90%;
-    margin: 10px 10px;
 
-    border: 1px solid black;
+.personalinfo p{
+    font-size: 20px;
+}
 
+.personalinfo p span{
+    color: rgb(76, 76, 179);
+    text-decoration: underline;
+}
+
+.educations{
+    height: 80px;
+    width: 60%;
+    margin: 20px 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: space-around; */
+}
+
+.educations  p{
+    font-size: 20px;
+}
+
+.skillsection{
+    height: 100px;
+    width: 60%;
+    margin: 20px 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#skillheading{
+    cursor: pointer;
+}
+
+.skillsection li{
+    list-style: decimal;
+    font-size: 17px;
+    font-weight: 550;
 }
