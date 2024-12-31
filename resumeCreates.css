@@ -1,136 +1,97 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
+/* Styling form and resume sections */
 
-.resume-container{
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 0;
     background-color: white;
-    width: 80%;
-    height: 800px;
-    border-radius:10px; 
-    margin: 30px   auto;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    /* margin: 10px 10px ; */
 }
 
-.part1{
-    height: 100%;
-    width: 40%;
-    background-color: rgb(219,211,216);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-#profilepic{
-    height: 250px;
-    border-radius: 45%;
-    display: flex;
-    align-self: center;
-    border: 3px solid orangered;
+form {
+    margin: auto;
+    background-color:rgb(239,241,243);
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    max-width: 600px;
 }
 
-.part1 h2{
-    font-size: 30px;
-    font-weight: 700;
-    /* border: 5px solid orange; */
-    /* border-radius: 40%; */
-    text-decoration: underline;
-    padding: 10px 20px;
-    color: rgb(73, 72, 72);
-}
-.part1 p{
+h1 {
     text-align: center;
-    font-size: 20px;
     color: black;
 }
-#para2{
-    margin-top: 10px;
-    text-align: left;
-}
 
-
-
-
-
-
-.part2{
-    height: 100%;
-    width: 60%;
-    /* background-color: rgb(216,180,160); */
-}
-
-.part2 h1{
-    text-align: center;
-    font-size: 40px;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-.part2 h3{
-    font-size: 30px;
-    /* margin: 5px 5px; */
+fieldset {
+    /* border: 2px solid rgb(214,217,206); */
     border: 2px solid orangered;
-    box-shadow: orangered 0px 5px 15px;
-    padding: 5px;
-    border-radius: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(224, 224, 224);
 }
 
-.personalinfo {
-    height: 170px;
-    width: 60%;
-    margin: 20px 50px;
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+legend {
+    font-weight: bold;
+    text-align: left;
+    color: rgb(34, 29, 29);
 }
 
-.personalinfo p{
-    font-size: 20px;
+label {
+    display: block;
+    margin-top: 10px;
+    color: black;
+
 }
 
-.personalinfo p span{
-    color: rgb(76, 76, 179);
-    text-decoration: underline;
+input,textarea {
+    margin-top: 4px;
+    padding: 8px;
+    width: calc(100% - 1px);
+    /* border: 2px solid rgb(214,217,206); */
+    border: 2px solid orangered;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.educations{
-    height: 80px;
-    width: 60%;
-    margin: 20px 50px;
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    
-    /* justify-content: space-around; */
-}
-
-.educations  p{
-    font-size: 20px;
-}
-
-.skillsection{
-    height: 100px;
-    width: 60%;
-    margin: 20px 50px;
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#skillheading{
+button {
+    display: block;
+    width: 50%;
+    border: 2px solid rgb(214,217,206);
+    /* border: 2px solid orangered; */
+    color: black;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
     cursor: pointer;
+    margin: 0 auto;
 }
 
-.skillsection li{
-    list-style: decimal;
-    font-size: 17px;
-    font-weight: 550;
+button :hover {
+    color: orangered;
+}
+
+#resume-display {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    background-color: rgb(228, 242, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; */
+}
+
+#resume-display h2 {
+    color: black;
+    margin-top: 10px;
+}
+#resume-display h3 {
+    color: black;
+    margin-top: 10px;
 }

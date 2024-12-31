@@ -8,41 +8,41 @@
 </head>
 <body>
     <div id="header-placeholder"></div>
-    <div class="resume-container">
-        <div class="part1">
-       <img src="profile.jpg" alt="profile picture" id="profilepic">
-       <h2>Carrer Objective</h2>
-       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni aspernatur provident commodi neque quos earum deserunt? Libero molestias totam consequatur vero impedit, officia, rem nesciunt voluptatibus quod, reprehenderit beatae harum?</p>
-       <h2>Certification</h2>
-       <p><b>CIT:</b>From Superior college Of Professional College</p>
-       <p id="para2"><b>Software Engineering:</b>From Governer Housr Karachi(Ongoing)</p>
-        </div>
-        <div class="part2">
-      <h1>Static Interactive Resume</h1>
-      <h3>Personal Information</h3>
-       <div class="personalinfo">
-        <p><b>Name:</b>Rao Wakeel</p>
-       <p><b>Phone:</b>03198302080</p>
-       <p><b>Email:</b><span>raowakeel895@gmail.com</span></p>
-       <p><b>LinkedIn:</b><span>www.Linkedin.com</span></p>
-       <p></p>
-       </div>
-      <h3 onclick="toggleSkills()" id="skillheading">Education</h3>
-       <div class="educations" id="skillsection">
-        <p><b>Intermediate:</b>General Science from Karachi</p>
-        <p><b>Matric:</b>General Science from Karachi</p>
-       </div>
-       <h3  >Skill</h3> 
-        <div class="skillsection" id="skillsection">
-        <li>Website Development</li>
-        <li>App Development</li>
-        <li>Cloud Computing</li>
-       </div>
-        </div>
-    </div>
+    <h1>Dynamic Resume Builder</h1>
+   <form id="resume-form">
+    <fieldset>
+    <legend>Personal Information</legend>
+    <label for="name">Name</label>
+    <input type="text"  id="name" placeholder="Please enter your name" required>
+    <label for="phone">Phone Number</label>
+    <input type="tel"  id="phone" placeholder="Please enter your Phone number" required>
+    <label for="email">Email</label>
+    <input type="email"  id="email" placeholder="Please enter youe email" required>
+    </fieldset>
+    <fieldset>
+        <legend>Education:</legend>
+        <label for="education"></label>
+        <textarea name="" id="education" placeholder="Enter your education Background in list form" rows="6" required></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Experience:</legend>
+        <label for="experience"></label>
+        <textarea name="" id="experience" placeholder="Enter your experience" rows="6" required></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Skills:</legend>
+        <label for="skills"></label>
+        <textarea name="" id="skills" placeholder="Enter your skills" rows="6" required></textarea>
+    </fieldset>
+    <button type="submit"><b>Generate Resume</b></button>
+   </form>
+   <br>
+   <div id="resume-display">
+
+   </div>
     <div id="footer-placeholder"></div>
 
-    <script>
+    <script >
         function toggleSkills() {
   const skillSection = document.getElementById('skillsection');
 
@@ -72,5 +72,6 @@
             .catch(error => console.error('Error loading footer:', error));
     });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
